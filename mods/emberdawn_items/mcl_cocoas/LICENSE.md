@@ -25,9 +25,4 @@ Pixel Perfection by XSSheep is licensed under a [Creative
 Commons Attribution-Share Alike 4.0 International License][1].
 
 
-## Sounds
-
-See sounds/attributions.txt
-
-
 [1]: http://creativecommons.org/licenses/by-sa/4.0/
