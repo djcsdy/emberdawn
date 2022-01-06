@@ -1,7 +1,7 @@
-MineClone 5 (by davedevils, Wuzzy, Oil_boi, EliasFleckenstein, kay27 and countless others)
+MineClone 2 (by kay27, EliasFleckenstein, Wuzzy, davedevils and countless others)
 is an imitation of Minecraft.
 
-MineClone 5 is free software: you can redistribute it and/or modify
+MineClone 2 is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -11,7 +11,6 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License (in the GPL3.txt file) for more
 details.
-
 
 ## Licenses of sounds
 
@@ -93,18 +92,18 @@ Voxelands project <http://www.voxelands.com/> (CC BY-SA 3.0)
 * mcl_sounds_dug_water.ogg
 
 (Note: Artists from the Voxelands project include: sdzen, darkrose, sapier,
-      Tom Peter, Telaron, juskiddink)
+Tom Peter, Telaron, juskiddink)
 
 Michel Baradari <https://opengameart.org/content/lava-splash> (CC BY 3.0)
 * default_place_node_lava.ogg
 
 Adam_N (CC0 1.0):
 * player_falling_damage.ogg
-  Source: <https://www.freesound.org/people/Adam_N/sounds/346692/>
+  https://www.freesound.org/people/Adam_N/sounds/346692/
 
 Alecia Shepherd (CC BY-SA 4.0):
 * mcl_sounds_cloth.ogg
-  Source: SnowSong sound and music pack <https://opengameart.org/content/snowsong-sound-and-music-pack>
+  SnowSong sound and music pack https://opengameart.org/content/snowsong-sound-and-music-pack
 
 Unknown authors (WTFPL):
 * pedology_snow_soft_footstep.*.ogg

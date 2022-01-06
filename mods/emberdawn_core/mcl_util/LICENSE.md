@@ -1,7 +1,7 @@
-MineClone 5 (by davedevils, Wuzzy, Oil_boi, EliasFleckenstein, kay27 and countless others)
+MineClone 2 (by kay27, EliasFleckenstein, Wuzzy, davedevils and countless others)
 is an imitation of Minecraft.
 
-MineClone 5 is free software: you can redistribute it and/or modify
+MineClone 2 is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.

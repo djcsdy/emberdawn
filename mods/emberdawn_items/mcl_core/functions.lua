@@ -204,23 +204,8 @@ minetest.register_abm({
 	action = function(pos, node, active_object_count, active_object_count_wider)
 		for _, object in pairs(minetest.get_objects_inside_radius(pos, 0.9)) do
 			local entity = object:get_luaentity()
-			if entity then
-				local entity_name = entity.name
-				if entity_name == "__builtin:item" then
-					object:remove()
-				elseif entity_name == "mcl_minecarts:minecart" then
-					local pos = object:get_pos()
-					local driver = entity._driver
-					if driver then
-						mcl_player.player_attached[driver] = nil
-						local player = minetest.get_player_by_name(driver)
-						player:set_detach()
-						player:set_eye_offset({x=0, y=0, z=0},{x=0, y=0, z=0})
-						mcl_player.player_set_animation(player, "stand" , 30)
-					end
-					minetest.add_item(pos, "mcl_minecarts:minecart")
-					object:remove()
-				end
+			if entity and entity.name == "__builtin:item" then
+				object:remove()
 			end
 		end
 		local posses = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } }
