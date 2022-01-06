@@ -6,12 +6,18 @@
 ## Creator of MineClone2
 * Wuzzy
 
-## Maintainers
+## Creator of Emberdawn
+* Daniel Cassidy
+
+## Contributors to Emberdawn
+* Jodie Watson
+
+## Maintainers of MineClone2
 * Fleckenstein
 * Nicu
 * kay27
 
-## Developers
+## Developers of MineClone 2
 * bzoss
 * AFCMS
 * epCode
@@ -25,7 +31,7 @@
 * cora
 * jordan4ibanez
 
-## Contributors
+## Contributors to MineClone 2
 * Laurent Rocher
 * HimbeerserverDE
 * TechDudie
@@ -131,7 +137,7 @@
 * todoporlalibertad
 * Marcin Serwin
 
-## Funders
+## Funders of MineClone 2
 * 40W
 
 ## Special thanks
