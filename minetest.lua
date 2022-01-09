@@ -9,6 +9,13 @@ minetest = {}
 --- @field y number
 --- @field z number
 
+--- @class MapNode
+--- @field name string
+--- @field prob number
+--- @field param1 number
+--- @field param2 number
+--- @field force_place boolean
+
 --- Queue all blocks in the area from `pos1` to `pos2`, inclusive, to be
 --- asynchronously fetched from memory, loaded from disk, or if inexistent,
 --- generates them.
