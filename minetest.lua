@@ -198,10 +198,13 @@ function VoxelManip:calc_lighting() end
 VoxelArea = {}
 
 --- Creates a new VoxelArea.
---- @param MinEdge Position
---- @param MaxEdge Position
+--- @param options VoxelAreaOptions
 --- @return VoxelArea
-function VoxelArea:new(MinEdge, MaxEdge) end
+function VoxelArea:new(options) end
+
+--- @class VoxelAreaOptions
+--- @field MinEdge Position
+--- @field MaxEdge Position
 
 --- Returns a 3D vector containing the size of the area formed by `MinEdge`
 --- and `MaxEdge`.
