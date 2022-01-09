@@ -5,23 +5,23 @@
 minetest = {}
 
 --- @class Position
---- @field x number
---- @field y number
---- @field z number
+--- @field x integer
+--- @field y integer
+--- @field z integer
 
 --- @class MapNode
 --- @field name string
---- @field prob number
---- @field param1 number
---- @field param2 number
+--- @field prob integer
+--- @field param1 integer
+--- @field param2 integer
 --- @field force_place boolean
 
 --- A helper class for voxel areas.
 --- 
 --- The coordinates are *inclusive*, like most other things in Minetest.
 --- @class VoxelArea
---- @field ystride number
---- @field zstride number
+--- @field ystride integer
+--- @field zstride integer
 VoxelArea = {}
 
 --- Creates a new VoxelArea.
@@ -36,7 +36,7 @@ function VoxelArea:new(MinEdge, MaxEdge) end
 function VoxelArea:getExtent() end
 
 --- Returns the volume of the area formed by `MinEdge` and `MaxEdge`.
---- @return number
+--- @return integer
 function VoxelArea:getVolume() end
 
 --- Returns the index of an absolute position in a flat array starting at `1`.
@@ -48,10 +48,10 @@ function VoxelArea:getVolume() end
 ---
 --- Useful for things like `VoxelManip`, raw Schematic specifiers,
 --- `PerlinNoiseMap:get2d`/`3dMap`, and so on.
---- @param x number
---- @param y number
---- @param z number
---- @return number
+--- @param x integer
+--- @param y integer
+--- @param z integer
+--- @return integer
 function VoxelArea:index(x, y, z) end
 
 --- Returns the index of an absolute position in a flat array starting at `1`.
@@ -62,18 +62,18 @@ function VoxelArea:index(x, y, z) end
 --- Useful for things like `VoxelManip`, raw Schematic specifiers,
 --- `PerlinNoiseMap:get2d`/`3dMap`, and so on.
 --- @param p Position
---- @return number
+--- @return integer
 function VoxelArea:indexp(p) end
 
 --- Returns the absolute poisition vector corresponding to index `i`.
---- @param i number
+--- @param i integer
 --- @return Position
 function VoxelArea:position(i) end
 
 --- Check if (`x`, `y`, `z`) is inside area formed by `MinEdge` and `MaxEdge`.
---- @param x number
---- @param y number
---- @param z number
+--- @param x integer
+--- @param y integer
+--- @param z integer
 --- @return boolean
 function VoxelArea:contains(x, y, z) end
 
@@ -83,26 +83,26 @@ function VoxelArea:contains(x, y, z) end
 function VoxelArea:containsp(p) end
 
 --- Check if index `i` is inside area formed by `MinEdge` and `MaxEdge`.
---- @param i number
+--- @param i integer
 --- @return boolean
 function VoxelArea:containsi(i) end
 
 --- Returns an iterator that returns indices from (`minx`, `miny`, `minz`)
 --- to (`maxx`, `maxy`, `maxz`) in the order of `[z [y [x]]]`.
---- @param minx number
---- @param miny number
---- @param minz number
---- @param maxx number
---- @param maxy number
---- @param maxz number
---- @return fun(): number
+--- @param minx integer
+--- @param miny integer
+--- @param minz integer
+--- @param maxx integer
+--- @param maxy integer
+--- @param maxz integer
+--- @return fun(): integer
 function VoxelArea:iter(minx, miny, minz, maxx, maxy, maxz) end
 
 --- Returns an iterator that returns indices from `minp` to `maxp` in the
 --- order of `[z [y [x]]]`.
 --- @param minp Position
 --- @param maxp Position
---- @return fun(): number
+--- @return fun(): integer
 function VoxelArea:iterp(minp, maxp) end
 
 --- Queue all blocks in the area from `pos1` to `pos2`, inclusive, to be
@@ -118,4 +118,4 @@ function VoxelArea:iterp(minp, maxp) end
 --- @param param? any
 function minetest.emerge_area(pos1, pos2, callback, param) end
 
---- @alias EmergeAreaCallback fun(blockpos: Position, action: any, calls_remaining: number, param: any)
+--- @alias EmergeAreaCallback fun(blockpos: Position, action: any, calls_remaining: integer, param: any)
