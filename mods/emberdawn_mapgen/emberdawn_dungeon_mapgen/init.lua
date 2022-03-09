@@ -18,4 +18,6 @@ minetest.register_on_generated(function(minp, maxp, blockseed)
     voxel_manip:set_data(content_ids)
     voxel_manip:set_light_data(light_data)
     voxel_manip:write_to_map(false)
+
+    minetest.add_entity({x=0, y=0, z=2}, "emberdawn_test_entity:TestEntity", nil)
 end)
